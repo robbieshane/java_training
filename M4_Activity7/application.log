@@ -1,0 +1,23 @@
+2026-01-14 08:52:57.159 [INFO] M4.Activities.BankAccount2 - Deposit requested: ₱5000.0
+2026-01-14 08:52:57.166 [INFO] M4.Activities.BankAccount2 - Deposit completed: ₱5000.0, New balance: ₱15000.0
+2026-01-14 08:52:57.166 [INFO] M4.Activities.BankAccount2 - Withdrawal requested: ₱3000.0
+2026-01-14 08:52:57.166 [INFO] M4.Activities.BankAccount2 - Withdrawal completed: ₱3000.0, New balance: ₱12000.0
+2026-01-14 08:52:57.166 [INFO] M4.Activities.BankAccount2 - Deposit requested: ₱-500.0
+2026-01-14 08:52:57.166 [ERROR] M4.Activities.BankAccount2 - Invalid deposit amount: ₱-500.0
+2026-01-14 08:52:57.166 [ERROR] M4.Activities.M4Activity7 - Deposit failed: Deposit amount must be positive.
+M4.Activities.InvalidAmountException: Deposit amount must be positive.
+	at HelloWorld/M4.Activities.BankAccount2.deposit(M4Activity7.java:71)
+	at HelloWorld/M4.Activities.M4Activity7.lambda$2(M4Activity7.java:102)
+	at HelloWorld/M4.Activities.M4Activity7.runTest(M4Activity7.java:89)
+	at HelloWorld/M4.Activities.M4Activity7.main(M4Activity7.java:102)
+2026-01-14 08:52:57.169 [INFO] M4.Activities.BankAccount2 - Withdrawal requested: ₱20000.0
+2026-01-14 08:52:57.170 [WARN] M4.Activities.BankAccount2 - Insufficient funds: ₱12000.0 Available 
+2026-01-14 08:52:57.170 [ERROR] M4.Activities.M4Activity7 - Withdrawal failed: Insufficient funds for withdrawal
+M4.Activities.InsufficientFundsException: Insufficient funds for withdrawal
+	at HelloWorld/M4.Activities.BankAccount2.withdraw(M4Activity7.java:58)
+	at HelloWorld/M4.Activities.M4Activity7.lambda$3(M4Activity7.java:103)
+	at HelloWorld/M4.Activities.M4Activity7.runTest(M4Activity7.java:89)
+	at HelloWorld/M4.Activities.M4Activity7.main(M4Activity7.java:103)
+2026-01-14 08:52:57.170 [INFO] M4.Activities.BankAccount2 - Deposit requested: ₱60000.0
+2026-01-14 08:52:57.171 [WARN] M4.Activities.BankAccount2 - Large deposit: ₱60000.0 - requires verification
+2026-01-14 08:52:57.171 [INFO] M4.Activities.BankAccount2 - Deposit completed: ₱60000.0, New balance: ₱72000.0
